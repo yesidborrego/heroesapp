@@ -17,7 +17,7 @@ export const HeroPage = () => {
         <img
           alt={ hero.superhero }
           className="img-thumbnail"
-          src={ `/heroes/${ heroId }.jpg` }
+          src={ `./heroes/${ heroId }.jpg` }
         />
       </div>
 
