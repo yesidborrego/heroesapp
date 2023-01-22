@@ -6,6 +6,8 @@ export const HeroPage = () => {
   const { heroId } = useParams();
   const hero = useMemo(() => getHeroById(heroId), [heroId]);
   const navigate = useNavigate();
+  const heroImg = `./heroes/${ heroId }.jpg`;
+  const heroImg2 = `../heroes/${ heroId }.jpg`;
 
   if(!hero) {
     return <Navigate to={"/marvel"} />
@@ -17,7 +19,12 @@ export const HeroPage = () => {
         <img
           alt={ hero.superhero }
           className="img-thumbnail"
-          src={ `./heroes/${ heroId }.jpg` }
+          src={ heroImg }
+        />
+        <img
+          alt={ hero.superhero }
+          className="img-thumbnail"
+          src={ heroImg2 }
         />
       </div>
 
