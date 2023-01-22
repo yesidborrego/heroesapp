@@ -1,6 +1,16 @@
+import { Outlet } from 'react-router-dom';
+import { Navbar } from './global';
 
 export const HeroesApp = () => {
   return (
-    <div>HeroesApp</div>
+    <>
+      <header>
+        <Navbar />
+      </header>
+
+      <main className="container mt-2">
+        <Outlet />
+      </main>
+    </>
   )
 }
