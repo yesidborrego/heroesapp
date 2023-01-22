@@ -13,7 +13,7 @@ export const HeroCard = ({
   superhero,
 }) => {
 
-  const imgHeroe = `/heroes/${id}.jpg`;
+  const imgHeroe = `./heroes/${id}.jpg`;
 
   return (
     <div className="col animate__animated animate__fadeIn d-flex">
